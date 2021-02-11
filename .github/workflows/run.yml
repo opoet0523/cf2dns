@@ -1,11 +1,13 @@
 name: 'GitHub Actions CloudFlare2DNSPod Bot'
 
 on:
-  push:
-    branches: 
-      - master
+  # push:
+  #   branches: 
+  #     - master
   schedule:
     - cron: '*/30 * * * *'
+  workflow_dispatch:
+    inputs:
 
 jobs:
   build:
